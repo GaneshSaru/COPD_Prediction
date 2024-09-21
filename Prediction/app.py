@@ -161,7 +161,7 @@ def visualization_dashboard():
 
 # Main app function
 def main():
-    st.sidebar.title("Naviagtion")
+    st.sidebar.title("App Menu")
     app_mode = st.sidebar.selectbox("Choose the app mode",["Data Visualization","COPD Prediction"])
 
     if app_mode == "COPD Prediction":
