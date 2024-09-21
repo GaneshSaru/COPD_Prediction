@@ -6,7 +6,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Load the trained model
-with open('Prediction\Best_Random_Forest_Model.pkl', 'rb') as f:
+with open(r'Prediction\Best_Random_Forest_Model.pkl', 'rb') as f:
     model = pickle.load(f)
 
 # Load the dataset for visualization
