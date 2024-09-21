@@ -14,7 +14,6 @@ path = r"../Data/synthetic_COPD_data.csv"
 df = pd.read_csv(path)
 
 # Streamlit App
-#def main():
 def prediction_dashboard():
     st.title("COPD Prediction Dashboard")
 
