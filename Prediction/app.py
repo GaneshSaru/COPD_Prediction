@@ -72,11 +72,12 @@ def prediction_dashboard():
             input_df[col] = 0  # Add missing location columns with 0
 
     # Prediction
-    prediction = model.predict(input_df)
-    if prediction[0] == 1:
-        st.write("Prediction: COPD Detected")
-    else:
-        st.write("Prediction: No COPD Detected")
+    if st.button("Predict"):
+        prediction = model.predict(input_df)
+        if prediction[0] == 1:
+            st.write("Prediction: COPD Detected")
+        else:
+            st.write("Prediction: No COPD Detected")
 
 def visualization_dashboard():
     st.title("COPD Data Exploration")
