@@ -10,7 +10,7 @@ with open(r'Prediction/Best_Random_Forest_Model.pkl', 'rb') as f:
     model = pickle.load(f)
 
 # Load the dataset for visualization
-path = r"../Data/synthetic_COPD_data.csv"
+path = r"Data\synthetic_COPD_data.csv"
 df = pd.read_csv(path)
 
 # Streamlit App
